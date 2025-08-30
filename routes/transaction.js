@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 const { createTransaction, getTransactions } = require('../controller/Transaction');
 
-router.post('/addTransaction',createTransaction)
-
-router.get('/getTransactions',getTransactions)
+// Routes 
+router.post('/transactions',createTransaction)
+router.get('/transactions',getTransactions)
 
 module.exports = router;
