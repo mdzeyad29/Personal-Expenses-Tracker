@@ -5,9 +5,7 @@ const port = 3000
 const dotenv = require("dotenv");
 dotenv.config();
 const db = require('./Config/database');
-db.connect();
-
-
+db.connects();
 
 app.use(express.json());
 const transaction = require('./routes/transaction');
