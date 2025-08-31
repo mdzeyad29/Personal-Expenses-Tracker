@@ -11,6 +11,9 @@ app.use(express.json());
 const transaction = require('./routes/transaction');
 app.use('/api',transaction);
 
+const auth = require("./routes/authRoutes");
+app.use('/api/auth',auth)
+
 
 
 app.get('/', (req,res)=>{
